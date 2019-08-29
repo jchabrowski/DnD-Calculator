@@ -1,0 +1,88 @@
+img {
+  opacity: 0.6;
+}
+
+body {
+  min-height: 100%;
+  min-width: 1024px;
+  width: 100%;
+  height: auto;
+  position: relative;
+  top: 0;
+  left: 0;
+  background-image: url("Volos.jpg");
+  /* background-size: auto; */
+  background-size:     auto;                      
+  background-repeat:   no-repeat;
+  
+   
+}
+
+#encounter {
+  
+  height: 50px;
+  margin-top: 50px;
+  
+}
+
+#coins {
+  
+  height: 50px;
+  margin-top: 200px;
+  margin-bottom: 100px;
+}
+
+table {
+  border-collapse: collapse;
+  padding: 5px;
+  width: 20%;
+  height: 50px;
+}
+
+#tbl {
+  margin-left: 180px;
+  height: 50px;
+}
+
+tr {
+  border: 1.5px solid black;
+  padding: 5px;
+  text-align: center;
+}
+
+td {
+  border: 1.5px solid black;
+  padding: 5px;
+  text-align: center;
+  color: rgb(199, 182, 116)
+}
+
+th {
+  border: 1.5px solid black;
+  padding: 5px;
+  text-align: center;
+  color: rgb(233, 221, 152);
+}
+
+#encounter th {
+  color: rgb(165, 178, 189);
+}
+
+#btn {
+  margin-top: 40px;
+  margin-left: 180px;
+  background-color:  rgba(53, 54, 49, 0.432);
+  color: rgb(165, 178, 189);
+  border: none;
+  padding: 7px 10px;
+  text-decoration: none;
+  
+}
+
+#btn:hover {
+  background-color:  rgba(131, 123, 54, 0.432);
+}
+
+ #btn:focus, td:focus {
+  outline: none;
+}

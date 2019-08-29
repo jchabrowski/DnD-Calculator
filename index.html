@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>D&D Bank</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+  <div id="coins">
+    <table id="tbl">
+      <tr>
+        <th colspan='3'>My purse contains </th>
+      </tr>
+      <tr>
+        <th>Gold</th>
+        <th>Silver</th>
+        <th>Copper</th>
+      </tr>
+      <tr>
+        <td contenteditable="true" id="totalGold">10</td>
+        <td contenteditable="true" id="totalSilver">20</td>
+        <td contenteditable="true" id="totalCopper">5</td>
+      </tr>
+    </table>
+  </div>
+
+  <div id="encounter">
+    <table id="tbl">
+      <tr>
+        <th colspan='3'>I just obtained </th>
+      </tr>
+      <tr>
+        <th>Gold</th>
+        <th>Silver</th>
+        <th>Copper</th>
+      </tr>
+      <tr>
+        <td contenteditable="true" id="lootedGold" class="lootedGold">1</td>
+        <td contenteditable="true" id="lootedSilver" class="lootedSilver">2</td>
+        <td contenteditable="true" id="lootedCopper" class="lootedCopper">3</td>
+      </tr>
+    </table>
+  </div>
+  <div>
+    <table>
+      
+    </table>
+  </div>
+  <button type="button" id="btn" onclick="buttonPressed()">Better hide them in my purse...</button>
+  <script src="script.js"></script>
+</body>
+
+</html>
