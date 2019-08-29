@@ -32,6 +32,21 @@ body {
   margin-bottom: 100px;
 }
 
+input {
+  width: 50px;
+  background: none;
+  border: none;
+}
+
+input[type="number"] {
+  color:  rgb(199, 182, 116);
+  text-align: center;
+}
+
+input:focus {
+  outline: none;
+}
+
 table {
   border-collapse: collapse;
   padding: 5px;
@@ -64,8 +79,32 @@ th {
   color: rgb(233, 221, 152);
 }
 
+.dropdown-content {
+  display: none;
+}
+
+.hidden {
+  display: none;
+}
+
+.seen {
+  display: block;
+}
+
+.active {
+  display: block
+}
+
+.dropdown:hover .dropdown-content {display: block;}
+
 #encounter th {
   color: rgb(165, 178, 189);
+}
+
+.button {
+  font-family: Georgia;
+  font-size: 13px;
+  font-weight: bold;
 }
 
 #btn {
@@ -79,10 +118,21 @@ th {
   
 }
 
-#btn:hover {
+#obt-btn, #spent-btn {
+  margin-left: 180px;
+  width: 20%;
+  display: block;
+  background-color:  rgba(53, 54, 49, 0.432);
+  color: rgb(165, 178, 189);
+  border: none;
+  /*text-decoration: none;  */
+  padding: 7px;
+}
+
+#btn:hover, #obt-btn:hover, #spent-btn:hover {
   background-color:  rgba(131, 123, 54, 0.432);
 }
 
- #btn:focus, td:focus {
+ #btn:focus, td:focus, #obt-btn:focus {
   outline: none;
 }
