@@ -19,24 +19,25 @@
         <th>Copper</th>
       </tr>
       <tr>
-        <td><input type="number" id="totalGold"></td>
-        <td><input type="number" id="totalSilver"></td>
-        <td><input type="number" id="totalCopper"></td>
+        <td><input type="number" id="totalGold" min="0"></td>
+        <td><input type="number" id="totalSilver" min="0"></td>
+        <td><input type="number" id="totalCopper" min="0"></td>
       </tr>
     </table>
   </div>
 
+
   <div id="encounter">
     <table id="tbl">
       <!---<tr>-->
-        <!--<th colspan='3'>-->
-          <div id="obt-div" class="dropdown" display="block">
-          <button type="button" id="obt-btn" class="button" onclick="hideButtonPressed()"> I just obtained</button> 
-          <div id="spent-div" class="dropdown-content">
+      <!--<th colspan='3'>-->
+      <div id="obt-div" class="dropdown" display="block">
+        <button type="button" id="obt-btn" class="button" onclick="addCoins()"> I just obtained</button>
+        <div id="spent-div" class="dropdown-content">
           <button type="button" id="spent-btn" class="button" onclick="subtractCoins()">I think I spent like..</button>
-          </div>
-        </div>      
-        <!--</th>-->
+        </div>
+      </div>
+      <!--</th>-->
       <!----</tr>--->
       <tr>
         <th>Gold</th>
@@ -44,18 +45,25 @@
         <th>Copper</th>
       </tr>
       <tr>
-        <td class="lootedGold"><input type="number" id="lootedGold"></td>
-        <td class="lootedSilver"><input type="number" id="lootedSilver"></td>
-        <td class="lootedCopper"><input type="number" id="lootedCopper"></td>
+        <td class="lootedGold"><input type="number" id="lootedGold" min="0"></td>
+        <td class="lootedSilver"><input type="number" id="lootedSilver" min="0"></td>
+        <td class="lootedCopper"><input type="number" id="lootedCopper" min="0"></td>
       </tr>
     </table>
   </div>
-  <div>
-    <table>
-      
-    </table>
+
+  <div id='myExp'>
+    <p id="pExp">I currently got<input type="number" id="inputBox" name="experience" min=0> xp points
+      <button id='calc-Btn' onclick="inputXp(inputBox.value)">What level am I?</button>
+    </p>
   </div>
-  <button type="button" id="btn" class="button" onclick="hideButtonPressed()">Better hide them in my purse...</button>
+    <div>
+
+    <div id="calculatedXp">
+    <p id="XpP"></p>
+  </div>
+  <!-- Previous button, for accepting add/sub option 'Hide in purse' -->
+  <!-- <button type="button" id="btn" class="button" onclick="hideButtonPressed()">Better hide them in my purse...</button> -->
   <script src="script.js"></script>
 </body>
 
