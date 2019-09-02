@@ -29,7 +29,6 @@ body {
 }
 
 #myExp {
-  
   margin-top: 70px;
   padding: 5px;
 }
@@ -114,13 +113,16 @@ table {
   height: 25%;
 }
 
+.redColor, #totalGold, #totalSilver, #totalCopper, #lootedGold, #lootedSilver, #lootedCopper {
+  color: #480000;
+}
+
 #tbl {
   margin-left: 25%;
   height: 20%;
 }
 
 #pExp, #XpP {
-  
   text-align: center;
   width: 20%;
   color: rgb(199, 182, 116);
@@ -138,12 +140,10 @@ tr, td, th {
 
 td {
   color: rgb(11, 11, 12);
-  /*color: rgb(199, 182, 116)*/
 }
 
 th {
   color: rgb(1, 2, 2);
-  /*color: rgb(233, 221, 152);*/
 }
 
 
@@ -151,17 +151,17 @@ th {
   display: none;
 }
 
-.hidden {
+.hidden, .seen, .active {
   display: none;
 }
-
+/*
 .seen {
   display: block;
 }
 
 .active {
   display: block
-}
+} */
 
 .dropdown:hover .dropdown-content {
   display: block;
@@ -171,10 +171,6 @@ th {
   width: 20%;
   min-width: 20%;
   margin-left: 25%;
-}
-
-#encounter th {
-  color: rgb(165, 178, 189);
 }
 
 .button, #pExp, #calc-Btn, #XpP {
